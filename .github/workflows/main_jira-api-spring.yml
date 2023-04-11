@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'jira-api-spring'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9075C71459A343D8A4C8D08DD78C0A4F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DCB8770B177A47C88DDB524CA8D371E9 }}
           package: '*.jar'

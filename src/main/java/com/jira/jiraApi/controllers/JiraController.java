@@ -15,7 +15,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.jira.jiraApi.LoginRequest;
 import com.jira.jiraApi.Models.User;
-//import com.jira.jiraApi.Services.UserServices;
 import com.jira.jiraApi.Services.UserServices;
 
 import java.io.BufferedReader;
@@ -140,7 +139,6 @@ public class JiraController {
     @PostMapping("/cargar")
     public ResponseEntity<String> uploadFile2(@RequestParam("id") String id,
             @RequestParam("file") MultipartFile file) throws IOException {
-        System.out.println(id);
         URL url = new URL("https://test-mesa-ayuda.atlassian.net/rest/api/2/issue/" + id + "/attachments");
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("POST");
@@ -157,7 +155,6 @@ public class JiraController {
 
         try (OutputStream output = conn.getOutputStream()) {
             // agregar parámetro "file"
-            System.out.println(file.getOriginalFilename());
             output.write(("--" + boundary + "\r\n").getBytes());
             output.write(("Content-Disposition: form-data; name=\"file\"; filename=\"" + file.getOriginalFilename()
                     + "\"\r\n").getBytes());
@@ -174,14 +171,10 @@ public class JiraController {
             try (InputStream input = conn.getInputStream()) {
                 byte[] responseBytes = input.readAllBytes();
                 String response = new String(responseBytes, StandardCharsets.UTF_8);
-                System.out.println(response);
             }
         } else {
             System.out.println("Error: " + conn.getResponseCode() + " " + conn.getResponseMessage());
         }
-        System.out.println("*************");
-        System.out.println("Se termino todo con exito");
-        System.out.println("*************");
         return null;
     }
 

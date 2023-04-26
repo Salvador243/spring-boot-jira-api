@@ -30,7 +30,7 @@ import org.codehaus.jackson.map.ObjectMapper;
 public class ReportesController {
     private String url = "https://test-mesa-ayuda.atlassian.net/rest/api/3/search?jql=project=Test&fields=issuetype,project,priority,assignee,summary";
     private String email = "salvador243gm@gmail.com";
-    private String apiToken = "ATATT3xFfGF0H-Uk2Ql_6rO7aIqmjrVGDnf4IGtqnftT7EJrzs3bXo2lvdeg2Jm4_wAa0EMOCQvQLZNsELtlDZ6wQZYlrGNOSlBnHmzFT5Esou8JfvSHPpeAuzSU1xsfzhPJ93jd357KjsQcXS8NKsAqyCbDcf6fsTnN-pbdo7jscSHQR3YOnLE=E589DF1D";
+    private String apiToken = "ATATT3xFfGF0ZA5VhUb66fPvcd25_jhG8BLTlNbLHncvoQGqOe5Oljeh7nN2SVvF3tIb08fP9O2ORNKNi0a3O61tihf4OOrEAEiwm27XQwkdzAtfCgTcyAwp9gHOH1-sUcY1UzAwE_94BCLFSVE4FDY2-J-CYCkTrSWlxZoAOXup2e7gHXFnbWw=6E7B8653";
     @Autowired
     JiraController jiraController;
 

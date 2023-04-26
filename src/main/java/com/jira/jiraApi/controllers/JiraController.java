@@ -37,7 +37,7 @@ public class JiraController {
             throws ClientProtocolException, IOException, JSONException {
         String url = "https://test-mesa-ayuda.atlassian.net/rest/api/3/search?jql=project=Test";
         String email = "salvador243gm@gmail.com";
-        String apiToken = "ATATT3xFfGF0ZA5VhUb66fPvcd25_jhG8BLTlNbLHncvoQGqOe5Oljeh7nN2SVvF3tIb08fP9O2ORNKNi0a3O61tihf4OOrEAEiwm27XQwkdzAtfCgTcyAwp9gHOH1-sUcY1UzAwE_94BCLFSVE4FDY2-J-CYCkTrSWlxZoAOXup2e7gHXFnbWw=6E7B8653";
+        String apiToken = "ATATT3xFfGF0punMcwwP5nfVak3D8ZORbLP6Ec6c-b1aV169t2j77TP9-N5SXbVnrHRrFSF8DHIURYYFLVLVJJX5UQlHc6Wz1YmLexsvV_lBUknDBwOMFd4lqm1ZCQoTwDESe61W6pMMfhQgg2pj5lyBmalpVN92pkvUgajNDO1cNPIzRVAO1WM=0F1D5147";
 
         // Crear la conexión HTTP
         URL obj = new URL(url);
@@ -68,7 +68,7 @@ public class JiraController {
     public Map<String, Object> usuariosJira() throws ClientProtocolException, IOException {
         String url = "https://test-mesa-ayuda.atlassian.net/rest/api/3/users/search";
         String email = "salvador243gm@gmail.com";
-        String apiToken = "ATATT3xFfGF0ZA5VhUb66fPvcd25_jhG8BLTlNbLHncvoQGqOe5Oljeh7nN2SVvF3tIb08fP9O2ORNKNi0a3O61tihf4OOrEAEiwm27XQwkdzAtfCgTcyAwp9gHOH1-sUcY1UzAwE_94BCLFSVE4FDY2-J-CYCkTrSWlxZoAOXup2e7gHXFnbWw=6E7B8653";
+        String apiToken = "ATATT3xFfGF0punMcwwP5nfVak3D8ZORbLP6Ec6c-b1aV169t2j77TP9-N5SXbVnrHRrFSF8DHIURYYFLVLVJJX5UQlHc6Wz1YmLexsvV_lBUknDBwOMFd4lqm1ZCQoTwDESe61W6pMMfhQgg2pj5lyBmalpVN92pkvUgajNDO1cNPIzRVAO1WM=0F1D5147";
 
         // Crear la conexión HTTP
         URL obj = new URL(url);
@@ -100,7 +100,7 @@ public class JiraController {
             throws ClientProtocolException, IOException {
         String url = "https://test-mesa-ayuda.atlassian.net/rest/api/3/user?accountId=" + accountId;
         String email = "salvador243gm@gmail.com";
-        String apiToken = "ATATT3xFfGF0ZA5VhUb66fPvcd25_jhG8BLTlNbLHncvoQGqOe5Oljeh7nN2SVvF3tIb08fP9O2ORNKNi0a3O61tihf4OOrEAEiwm27XQwkdzAtfCgTcyAwp9gHOH1-sUcY1UzAwE_94BCLFSVE4FDY2-J-CYCkTrSWlxZoAOXup2e7gHXFnbWw=6E7B8653";
+        String apiToken = "ATATT3xFfGF0punMcwwP5nfVak3D8ZORbLP6Ec6c-b1aV169t2j77TP9-N5SXbVnrHRrFSF8DHIURYYFLVLVJJX5UQlHc6Wz1YmLexsvV_lBUknDBwOMFd4lqm1ZCQoTwDESe61W6pMMfhQgg2pj5lyBmalpVN92pkvUgajNDO1cNPIzRVAO1WM=0F1D5147";
         // Crear la conexión HTTP
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -134,7 +134,7 @@ public class JiraController {
 
     private final String API_URL = "https://test-mesa-ayuda.atlassian.net/rest/api/3/issue";
     private final String USERNAME = "salvador243gm@gmail.com";
-    private final String PASSWORD = "ATATT3xFfGF0ZA5VhUb66fPvcd25_jhG8BLTlNbLHncvoQGqOe5Oljeh7nN2SVvF3tIb08fP9O2ORNKNi0a3O61tihf4OOrEAEiwm27XQwkdzAtfCgTcyAwp9gHOH1-sUcY1UzAwE_94BCLFSVE4FDY2-J-CYCkTrSWlxZoAOXup2e7gHXFnbWw=6E7B8653";
+    private final String PASSWORD = "ATATT3xFfGF0punMcwwP5nfVak3D8ZORbLP6Ec6c-b1aV169t2j77TP9-N5SXbVnrHRrFSF8DHIURYYFLVLVJJX5UQlHc6Wz1YmLexsvV_lBUknDBwOMFd4lqm1ZCQoTwDESe61W6pMMfhQgg2pj5lyBmalpVN92pkvUgajNDO1cNPIzRVAO1WM=0F1D5147";
 
     @PostMapping("/cargar")
     public ResponseEntity<String> uploadFile2(@RequestParam("id") String id,
@@ -145,7 +145,7 @@ public class JiraController {
         conn.setDoOutput(true);
         conn.setRequestProperty("Authorization",
                 "Basic " + Base64.getEncoder().encodeToString(
-                        "salvador243gm@gmail.com:ATATT3xFfGF0ZA5VhUb66fPvcd25_jhG8BLTlNbLHncvoQGqOe5Oljeh7nN2SVvF3tIb08fP9O2ORNKNi0a3O61tihf4OOrEAEiwm27XQwkdzAtfCgTcyAwp9gHOH1-sUcY1UzAwE_94BCLFSVE4FDY2-J-CYCkTrSWlxZoAOXup2e7gHXFnbWw=6E7B8653"
+                        "salvador243gm@gmail.com:ATATT3xFfGF0punMcwwP5nfVak3D8ZORbLP6Ec6c-b1aV169t2j77TP9-N5SXbVnrHRrFSF8DHIURYYFLVLVJJX5UQlHc6Wz1YmLexsvV_lBUknDBwOMFd4lqm1ZCQoTwDESe61W6pMMfhQgg2pj5lyBmalpVN92pkvUgajNDO1cNPIzRVAO1WM=0F1D5147"
                                 .getBytes()));
 
         conn.setRequestProperty("Accept", "application/json");
